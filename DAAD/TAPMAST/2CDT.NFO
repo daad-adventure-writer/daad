@@ -1,0 +1,11 @@
+-----------------------------------------------
+Create a CPC master tape from your game binary
+-----------------------------------------------
+This is a Win32/64 executable. It will also work with WINE under Linux, 
+IT WON'T WORK IN DOS. 
+
+A CDT tape image is the Amstrad CPC equivalent to the TZX file format. 
+Have the compiled binary in the same directory as this executable and 
+then enter the following: 
+
+2cdt -n -r loaderstring YOUR.BIN imageoutname.cdt

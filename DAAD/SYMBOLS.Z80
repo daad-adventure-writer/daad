@@ -1,0 +1,57 @@
+;SYMBOLS.Z80
+;
+;This defines several symbols for the common Z80 instructions, that can
+;be included inline on DAAD (or C with inline instructions)
+;
+;Note that some are WORDS so be careful using them in DEF instructions
+;They are intended for simple inline coding jobs, nothing advanced, that
+;is what God intended Assemblers for - although writers often forget this.
+;
+;(If you add more, they are in the order given in ZAKS with some borrowed
+;things of 8080, e.g. M for (HL), so try to keep a consistent approach)
+;
+#define ED 237
+#define CB 203
+#define DDIX 221
+#define FDIY 253
+;
+#define ADD_HL_DE 25
+#define ADD_HL_HL 41
+#define CALL 205
+#define DEC_DE 27
+#define DEC_HL 43
+#define DI 243
+#define EI 251
+#define EX_DE_HL 235
+#define INC_A 60
+#define INC_B 4
+#define INC_C 12
+#define INC_DE 19
+#define INC_HL 35
+#define JP 195
+#define JR 24
+#define JR_NZ 32
+#define JR_Z 40
+#define LD_M_n 54
+#define LD_nn_A 50
+#define LD_A_nn 58
+#define LD_BC_nn 1
+#define LD_DE_nn 17
+#define LD_HL_nn 33
+#define LD_A_M 126
+#define LD_D_M 86
+#define LD_D_H 84
+#define LD_E_M 94
+#define LD_E_L 93
+#define LD_A_n 62
+#define LD_H_n 38
+#define LD_L_A 111
+;These next two must come after an ED
+#define LDIR 176
+#define LDDR 184
+#define POP_BC 193
+#define POP_DE 209
+#define PUSH_BC 197
+#define PUSH_HL 229
+#define RET 201
+

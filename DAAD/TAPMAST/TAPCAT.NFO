@@ -1,0 +1,26 @@
+--------
+tapcat
+--------
+
+Creates a .TAP file from one or more files (either +3DOS or raw). 
+It can also append to an existing .TAP file.
+
+Syntax is: tapcat {options} <tapfile> {options} <file> {{options} <file>...}
+
+The first set of options control the output file format:
+   -N:    If a file exists, overwrite it rather than appending to it.
+
+If the file has a +3 header, the file type and load
+address will be determined from the header, not from options.
+
+   -b      File is BASIC
+   -bLLLL  File is BASIC with autostart line LLLL
+   -c      File is character array
+   -cC     File is character array C$()
+   -d      File is headerless block
+   -m      File is memory block                          (default)
+   -mAAAA  File is memory block with load address AAAA
+   -u      File is number array
+   -uC     File is number array C()
+
+example: tapcat -ftap sidea.tap -b10 SPECCY.BAS SCREEN.SCR GAME

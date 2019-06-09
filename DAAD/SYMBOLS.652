@@ -1,0 +1,39 @@
+;SYMBOLS.652
+;
+;This defines several symbols for the common 6502 instructions, that can
+;be included inline on DAAD
+;
+;They are intended for simple inline coding jobs, nothing advanced, that
+;is what God intended Assemblers for - although writers often forget this.
+;
+#define ADCA 109
+#define ADCZ 101
+#define ADCI 105
+#define ADCAX 125
+#define ADCAY 121
+#define ADCIX 97
+#define ADCIY 113
+#define ADCZX 117
+#define INCA 238
+#define INCZ 230
+#define INCAX 254
+#define INCZX 246
+#define JMP 76
+#define JSR 32
+#define RTS 96
+#define LDAA 173
+#define LDAZ 165
+#define LDAI 169
+#define LDAAX 189
+#define LDAAY 185
+#define LDAIX 161
+#define LDAIY 177
+#define LDAZX 181
+#define STAA 141
+#define STAZ 133
+#define STAAX 157
+#define STAAY 153
+#define STAIX 129
+#define STAIY 145
+#define STAZX 149
+

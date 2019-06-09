@@ -1,0 +1,114 @@
+﻿   
+Self-Displaying ILBM
+
+   The most notable fact about pictures - whether ILBM format or any other -
+ is that they take up a terrible lot of space.  Which means that to save
+ space they are normally compressed.  Which in turn means that either a
+ compatible display program must be available, or the picture file must be
+ decompressed before use.   The advantage of self-displaying compressed
+ ILBMs which need no separate external displayer or decompression program
+ will be obvious.  
+
+   There are one or two programs around which will produce self-displaying
+ pics, but so far as I am aware, none that incorporate compression.
+
+
+Hence S-Pic
+
+   S-Pic will handle IFF ILBM of all types up to overscan HIRES/LACE in size.
+ Some of the new System3 display modes may also work.  Cycling is not supported
+ in this version.  
+ 
+   S-Pic first adds a display header (approx 800 bytes).  Then it checks
+ whether the ILBM is compressed (P-Compress format), if not the file is
+ compressed - a check is made as to whether the gain is greater than the
+ size of the decompression header - if not the uncompressed version is used.
+ Decompression header is added where it is needed.
+
+   Small pictures such as brushes under about 2K will not be compressed and
+ will end up some 800 bytes larger.  Larger files will be compressed and 
+ will normally be smaller than the original in spite of the added headers.
+
+   Advantages over a simple compressed pic + decompressing display tool include:
+
+   Disk space:   Apart from P-Reader (P-Compress format) the only programs
+       that will display compressed ILBMs work with Power Packer files.
+       This is not a very efficient compressor and S-Pics, even with the
+       included headers will normally be smaller than the same pic compressed
+       with PowerPacker - and much smaller than the Power Packed pic + display
+       tool.
+
+    Convenience:  No fiddling around with icon Default Tools.
+   
+    Portability:   The pic can be transferred anywhere without worrying over
+       whether a suitable decompressor/display tool is available, or changing
+       icons.
+
+    Speed: At a CLI it is a lot quicker to type "Art-Gallery" than for
+       example "dh0:c/PPShow Art-Gallery" 
+
+   As with S-Texts the real point is that it gives you a file that can be
+  moved from disk to disk without having to even consider whether suitable
+  decompressing displayers are on them, and can distribute without having to
+  consider whether recipients have any means of decompressing and displaying.
+
+   S-Pic is one of a family of tools for the production of self-executing
+  files.  S-Text has already been released.  S-Anim and S-Exec will follow
+  in due course.
+
+ 
+                          INSTRUCTIONS
+
+   Very very simple:
+
+   To create the executable pic open a CLI and type:
+
+                 S-Pic <picfile> <outfile>
+
+   The <outfile> must be different from <picfile>, you cannot directly
+  replace pics with their executable offspring.  It is a good idea to add
+  an extension (.se) to the outfile to distinguish it from a primitive
+  non-executable pic.
+ 
+   For Workbench use provide the executable with a TOOL type icon.
+
+   To view the pic treat the file just like any other executable:
+
+     At a CLI type the name, use RUN if you wish.
+     From Workbench double-click the icon.
+
+    To quit press the LEFT mouse button.   
+
+     
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    S-Pic is Freeware.  It may be copied and distributed freely and used
+   without charge for non-commercial purposes.  Authority for commercial
+   use should be obtained from the author below.
+
+    No responsibility can be accepted for any loss occasioned by use of the
+   programme.
+
+     Comments, suggestions, bug-reports all welcome.
+
+   Chas A. Wyndham,
+   1265 Canning Mills Road,
+   Roleystone,
+   WA 6111.
+   Australia 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

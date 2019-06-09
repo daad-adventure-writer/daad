@@ -1,0 +1,101 @@
+;This file defines the vector layout for Z80 based machines
+;
+	IF	MACHINE = 1
+VECTORS EQU	06204h
+DBADDR	EQU	08380h
+	ENDC
+	IF	MACHINE = 11
+VECTORS EQU	06204h
+DBADDR	EQU	08380h
+	ENDC
+	IF	MACHINE = 12
+VECTORS EQU	06204h
+DBADDR	EQU	08380h
+	ENDC
+	IF	MACHINE = 3
+VECTORS EQU	00840h
+DBADDR	EQU	02880h
+	ENDC
+	IF	MACHINE = 4
+VECTORS EQU	0B000h
+DBADDR	EQU	0100h
+	ENDC
+	IF	MACHINE = 7
+VECTORS EQU	0C000h
+DBADDR	EQU	0100h
+	ENDC
+
+	IFNDEF	VECTORS
+	LIST	ON
+
+;*** ERROR: MACHINE is not Z80
+
+	LIST	OFF
+	ENDC
+
+;These are compiler/interpreter specific, and fixed
+
+NUMPTRS EQU	20
+UPNUM	EQU	10
+
+;The main interpreter vectors - ONLY VALID from EXTERN, CALL etc AFTER
+;the system is loaded and initialised.
+
+;The first bytes are machine specific and should be avoided in general
+DV_STAR EQU	VECTORS
+DV_LEN	EQU	DV_STAR+3
+DV_MSP	EQU	DV_LEN+2
+;The three vectors for EXTERN,SFX and interrupts
+;Note that any routines for EXTERN and SFX must preserve BC - or increment
+;it past any inline parameters.
+EXTVEC	EQU	DV_MSP+5
+SFXVEC	EQU	EXTVEC+3	; This defaults to WRTPSG, params E=A,A=(BC)
+INTVEC	EQU	SFXVEC+3
+;Write the byte in E to the PSG chip register A
+WRTPSG	EQU	INTVEC+3
+;Call the subroutine at address given by inline word
+CALREL	EQU	WRTPSG+3
+;Open window A
+OPWIND	EQU	CALREL+3
+;Write character in A to current window
+OPCHR	EQU	OPWIND+3
+;Ensure wordwrap buffer is flushed
+FLUSH	EQU	OPCHR+3
+;Wait for key, returned in A
+ICHAR	EQU	FLUSH+3
+;Same but allow timeout
+ICHART	EQU	ICHAR+3
+;Generate run time error D and restart game
+RTERR	EQU	ICHART
+
+;The user pointers in the CTL section
+
+UPTR1	EQU	DBADDR+NUMPTRS*2
+UPTR2	EQU	UPTR1+2
+UPTR3	EQU	UPTR2+2
+UPTR4	EQU	UPTR3+2
+UPTR5	EQU	UPTR4+2
+UPTR6	EQU	UPTR5+2
+UPTR7	EQU	UPTR6+2
+UPTR8	EQU	UPTR7+2
+UPTR9	EQU	UPTR8+2
+UPTR10	EQU	UPTR9+2
+
+;The fixed buffer address in the CTL section. This is used to contain
+;any non relocatable code, as it will not move unless the compiler
+;version changes...
+
+CTLADDR EQU	UPTR1+UPNUM*2
+
+;A macro for calls within a block to allow them to be relative
+;this uses the CALREL vector in the interpreter, so you still need
+;to assemble a different version for each machine. If you write
+;true relocatable code you will not need to assemble new code each
+;time you compile however.
+
+CALLR	.MACRO	ARG1
+	CALL	CALREL
+	DEFW	(ARG1)-($+2)
+	ENDM
+
+
