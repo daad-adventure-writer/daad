@@ -2,9 +2,11 @@
 
 ## DAAD R4
 
-* added MSX-DOS game template disk which also comes with a custom loader
+* heavily updated documentation
 
 * recovered full DAAD MSX support (MSX-DOS implementation supported with Maluva)
+
+* added MSX-DOS game template disk which also comes with a custom loader
 
 * completely recovered PCW interpreters for both English and Spanish language adventures
 
