@@ -15,12 +15,12 @@ DAAD is a multi-machine and multi-graphics adventure writer, allowing you to tar
 
 ## Similar systems
 
-The adventure game writers which DAAD's father Tim Gilberts published with Gilsoft:
+Systems similar to DAAD are the adventure game tools which Tim Gilberts published with Gilsoft:
 
-* The Quill (available for a broad range of 8-bit systems)
+* The Quill & The Illustrator (available for a broad range of 8-bit systems)
 * Professional Adventure Writer / PAWs (Spectrum, CP/M)
 
-It is highly recommended that you have at least some experience with these systems, especially with the CondActs logic of Quill and PAWs, because a superset of this is the foundation of DAAD. Perfect would be knowledge about the PAWs CP/M version. It is the Gilsoft system which is the closest to DAAD. If you're new to DAAD, we advise you to grab yourself a copy of Quill and work your way through the tutorial to understand the basic logic.
+It is highly recommended that you have at least some experience with these programs, especially with the CondActs logic of Quill and PAWs, because a superset of this is the foundation of DAAD. Perfect would be knowledge about the PAWs CP/M version. It is the Gilsoft system which is the closest to DAAD. If you're new to DAAD, we advise you to grab yourself a copy of Quill and work your way through the tutorial to understand the basic logic.
 
 ## Moving ancestor system code to DAAD
 
@@ -42,11 +42,13 @@ To properly setup Visual Studio Code, you should also install the .SCE Syntax Hi
 
 DAAD has been extensively expaneded and improved since it had been recovered. The mandatory projects for you to check out are:
 
-* Maluva: an EXTERN which adds pixel graphic support to the 8-bit targets, as an alternative to DAADs own vector graphics editors. It adds missing features to DAAD, for example loading from and saving to +3 Disc on ZX Spectrum, MSX-DOS support.
+* [Maluva](https://github.com/Utodev/MALUVA): an EXTERN which adds pixel graphic support to the 8-bit targets, as an alternative to DAADs own vector graphics editors. It also adds essential, missing features to DAAD, for example loading from and saving to +3 Disc on ZX Spectrum as well as MSX-DOS support.
 
-* DRC (DAAD Reborn Compiler): a modern variant of the DAAD compiler which comes with lots of new features as well as an improved syntax. The biggest advantage of DRC is that building your adventures can be automated for most of the target machines. Also has a wonderful tape mastering tool for Spectrum bundled.
+* [DRC (DAAD Reborn Compiler)](https://github.com/Utodev/DRC): a modern variant of the DAAD compiler which comes with lots of new features as well as an improved syntax. The biggest advantage of DRC is that building your adventures can be automated for most of the target machines. Also has a wonderful tape mastering tool for Spectrum bundled.
 
-* EAAD: an advanced editor for DAAD sources, supports both the classic .SCE files as well as DRC's new DSF syntax. Also has an integrated code generator for riddles, which makes it very easy to create complex statments of adventure logic.
+* [Triz2DAAD](https://pypi.org/project/triz2DAAD/): command line utility which is priceless for world design and prototyping. It transforms maps created with Trizbort desktop app and Trizbort.io into code which can be compiled straight away with DAAD's DOS compiler as well as DRC.  
+
+* [EAAD](https://github.com/Utodev/EAAD): an advanced editor for DAAD sources, supports both the classic .SCE files as well as DRC's new DSF syntax. Also has an integrated code generator for riddles, which makes it very easy to create complex statments of adventure logic.
 
 ## Legal notice
 
