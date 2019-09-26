@@ -763,7 +763,7 @@ _       _       NOTEQ   255     GFlags
 
 _       _       PLUS    255     1
                 LT      255     255     ; Will be set at end to indicate init
-                SKIP    -1              ; has been done once
+                SKIP    -2              ; has been done once
 
 _       _       RESET                   ; Set objects to start location & Flag 1
                 LET     Strength 10

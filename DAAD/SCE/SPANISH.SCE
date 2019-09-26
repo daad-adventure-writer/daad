@@ -572,7 +572,7 @@ _       _       NOTEQ   255     GFlags  ; menos GFlags!!!
 
 _       _       PLUS    255     1
                 LT      255     255     ; Al final lo dejamos con valor 255
-                SKIP    -1              ; para indicer que hemos inicializado
+                SKIP    -2              ; para indicer que hemos inicializado
 
 _       _       RESET                   ; Objetos a su loc. inicial / Flag 1
                 LET     Strength 10
