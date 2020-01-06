@@ -1,4 +1,0 @@
-These are the PCW DAAD Interpreters:
-
-C000-E1F3 (size 21F4) for EDI
-C000-E2D6 (size 22D7) for SDI

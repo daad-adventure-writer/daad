@@ -1,5 +1,21 @@
 # Changelog
 
+## DAAD R5
+
+* Commodore Plus/4 support (264-series), also C16 with 64k
+
+* DRC is now the standard compiler for DAAD
+
+* the old DOS-based set of tools is deprecated
+
+* project cleanup and simplified structure
+
+* interpreter directories prepared for automated build scripts using DRC
+
+* implemented per-system documenation files
+
+* added highly configurable loaders for Commmodore 8-bit platforms
+
 ## DAAD R4
 
 * heavily updated documentation
