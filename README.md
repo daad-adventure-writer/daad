@@ -27,7 +27,7 @@ DAAD was created with the professional adventure developer in mind. It requires 
 
 ## The compiler: DRC
 
-DAAD's compiler [DRC](https://github.com/daad-adventure-writer/DRC) is available in a separate repository. Please also refer to the [DRC Wiki](https://github.com/daad-adventure-writer/DRC/wiki)for learning how to use it.
+DAAD's compiler [DRC](https://github.com/daad-adventure-writer/DRC) is available in a separate repository. Please also refer to the [DRC Wiki](https://github.com/daad-adventure-writer/DRC/wiki) for learning how to use it.
 
 ## Pixel image support and additional content: Maluva
 
