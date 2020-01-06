@@ -12,7 +12,7 @@
 
 * interpreter directories prepared for automated build scripts using DRC
 
-* implemented per-system documenation files
+* implemented per-system documentation files
 
 * added highly configurable loaders for Commmodore 8-bit platforms
 
