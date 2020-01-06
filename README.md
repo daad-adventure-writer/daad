@@ -57,7 +57,7 @@ To properly setup Visual Studio Code, you should also install the .SCE Syntax Hi
 
 * [Triz2DAAD](https://pypi.org/project/triz2DAAD/): command line utility which is priceless for world design and prototyping. It transforms maps created with Trizbort desktop app and Trizbort.io into code which can be compiled straight away with DAAD's DOS compiler as well as DRC.  
 
-* [EAAD](https://github.com/Utodev/EAAD): an advanced editor for DAAD sources, supports both the classic .SCE files as well as DRC's new DSF syntax. Also has an integrated code generator for riddles, which makes it very easy to create complex statments of adventure logic.
+* [EAAD](https://github.com/Utodev/EAAD): an advanced editor for DAAD sources. Also has an integrated code generator for riddles, which makes it very easy to create complex statments of adventure logic.
 
 ## Legal notice
 
