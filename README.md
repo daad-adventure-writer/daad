@@ -2,7 +2,7 @@
 
 DAAD is a multi-machine and multi-graphics adventure writer, enabling you to target a broad range of 8-bit and 16-bit systems. It was written by Tim Gilberts in the late 80s as an in-house solution for the legendary adventure forge Aventuras AD. It allows maintaining a single source file and then compile a database that is runnable through the interpreter of the target machines.
 
-![Chichén Itzá (CPC) by Aventuras AD, created '92 with DAAD](http://f.cl.ly/items/2b3q2X3c2M3m451O2G1b/chichen_itza_cpc.png "Chichén Itzá (CPC) by Aventuras AD, created '92 with DAAD")
+![The Curse of Rabenstein (C64 version) by Stefan Vogt, copyright (c) 2020 Puddle Software. Created with DAAD, using Maluva for pixel image support.](https://p196.p4.n0.cdn.getcloudapp.com/items/yAuLnkY6/1.png "The Curse of Rabenstein (C64 version) by Stefan Vogt, copyright (c) 2020 Puddle Software. Created with DAAD, using Maluva for pixel image support.")
 
 ## Supported target machines
 
