@@ -19,4 +19,4 @@ You can optionally place a loading screen as LOADPIC.SC2 on disk.
 for an example release check out Hibernated 1: http://8bitgames.itch.io
 
 
-* = Since MSXDOS and COMMAND.COM are copyrighted to Microsoft, we cannot distribute them but the internert is surely your friend in finding these.
+* = Since MSXDOS and COMMAND.COM are copyrighted to Microsoft, we cannot distribute them but the internet is surely your friend in finding these.
