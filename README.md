@@ -23,7 +23,7 @@ DAAD is a multi-machine and multi-graphics adventure writer, enabling you to tar
 
 ## Target audience & usage notes
 
-DAAD was created with the professional adventure developer in mind. It requires programming skills and knowledge in handling source code files and compilers. The sources of your adventures compile to game databases which need to be transferred to the target systems where they run in platform-specific interpreters. We recommend creating build-scripts for that purpose.
+DAAD was created with the professional adventure developer in mind. It requires programming skills and knowledge in handling source code files and compilers. The sources of your adventures compile to game databases which need to be transferred to the target systems where they run in platform-specific interpreters. We recommend creating build-scripts for that purpose. There is though, a kind of suite that helps you avoid that undesirable work and concentrate in game itself, it's called DAAD Ready and you can find it here: https://ngpaws.com/downloads/DAAD/DAADReady/
 
 ## The compiler: DRC
 
